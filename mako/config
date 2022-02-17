@@ -1,0 +1,18 @@
+font=Iosevka Term 12
+width=350
+height=3500
+border-radius=10
+padding=10
+max-history=30
+margin=10
+border-size=2
+default-timeout=5000
+
+background-color=#231f20
+border-color=#009ddc
+text-color=#d9d8d8
+
+[urgency=high]
+border-color=#ee2e24
+ignore-timeout=1
+
