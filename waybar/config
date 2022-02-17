@@ -3,7 +3,7 @@
 	"modules-left": ["river/tags"],
 	"modules-center": [],
 	// add network module if you want
-	"modules-right": ["custom/updates","custom/downloads", "cpu", "memory", "battery","backlight","pulseaudio", "network", "tray","custom/clock"],
+	"modules-right": ["custom/updates","custom/downloads", "cpu", "memory", "battery","backlight","pulseaudio", "tray","custom/clock"],
 	"pulseaudio": {
 		"tooltip": false,
 		"scroll-step": 5,
@@ -34,8 +34,7 @@
 		//"format-wifi": "  {essid} {ipaddr}",
 		//"format-ethernet": " {ipaddr}"
 		"format-wifi": "  {essid}",
-		"format-ethernet": "",
-		"on-click": "networkmanager_dmenu"
+		"format-ethernet": ""
 	},
 	"backlight": {
 		"tooltip": false,
