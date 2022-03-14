@@ -26,7 +26,9 @@
 	"backlight": {
 		"tooltip": false,
 		"format": " {}%",
-		"interval":1
+		"interval":1,
+        "on-scroll-up": "$HOME/.config/system_scripts/brightness up",
+		"on-scroll-down": "$HOME/.config/system_scripts/brightness down"
 	},
     "battery": {
         "states": {
@@ -72,7 +74,7 @@
     "custom/launcher":{
         "format": " ",
         "on-click": "rofi -show drun",
-        "on-click-right": "killall wofi"
+        "on-click-right": "killall rofi"
     },
     "custom/power":{
         "format": " ",
@@ -90,4 +92,3 @@
         "on-click": "bash ~/.config/system_scripts/pkill_bc"
     }
 }
-
