@@ -1,6 +1,6 @@
 * {
 	border: none;
-	border-radius: 0;
+	border-radius: 10;
     font-family: "JetbrainsMono Nerd Font" ;
 	font-size: 15px;
 	min-height: 22px;
@@ -203,11 +203,12 @@ window#waybar.hidden {
 }
 
 #custom-power {
+	font-size: 20px;
 	margin-top: 6px;
 	margin-left: 8px;
 	margin-right: 8px;
 	padding-left: 10px;
-	padding-right: 10px;
+	padding-right: 5px;
 	margin-bottom: 0px;
 	border-radius: 10px;
 	transition: none;
