@@ -1,7 +1,10 @@
 #!/bin/sh
+
 # This is the example configuration file for river.
+#
 # If you wish to edit this, you will probably want to copy it to
 # $XDG_CONFIG_HOME/river/init or $HOME/.config/river/init first.
+#
 # See the river(1), riverctl(1), and rivertile(1) man pages for complete
 # documentation.
 
@@ -173,9 +176,9 @@ do
 done
 
 # Set background and border color
-riverctl background-color 0x1d2021F
-riverctl border-color-focused 0xEFB8CCff	
-riverctl border-color-unfocused 0x608A78ff
+riverctl background-color 0xB5E8E0
+riverctl border-color-focused 0x89DCEB	
+riverctl border-color-unfocused 0xABE9B3
 
 # Set repeat rate
 riverctl set-repeat 50 300
