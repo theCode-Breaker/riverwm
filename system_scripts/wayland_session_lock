@@ -4,7 +4,7 @@ MUTEX="${HOME}/.config/lock/river-lock"
 LOG="${HOME}/.config/lock/lock-log"
 NOLOCK="${HOME}/.config/lock/NOLOCK"
 
-img=$(find ~/.config/river/background -type f | shuf -n 1)
+img=$(find ${HOME}/.config/river/backgrounds -type f | shuf -n 1)
 
 #scaleImg=$(feh --bg-fill "$img")
 #echo $scaleImg
