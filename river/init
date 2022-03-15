@@ -1,10 +1,7 @@
 #!/bin/sh
-
 # This is the example configuration file for river.
-#
 # If you wish to edit this, you will probably want to copy it to
 # $XDG_CONFIG_HOME/river/init or $HOME/.config/river/init first.
-#
 # See the river(1), riverctl(1), and rivertile(1) man pages for complete
 # documentation.
 
@@ -199,7 +196,7 @@ gnome_schema="org.gnome.desktop.interface"
 gsettings set "$gnome_schema" gtk-theme "Catppuccin-blue"
 gsettings set "$gnome_schema" icon-theme "Tela-circle-purple"
 gsettings set "$gnome_schema" cursor-theme "volantes_cursors"
-gsettings set "$gnome_schema" font-name "Cantarell 11"
+gsettings set "$gnome_schema" font-name "JetBrainsMono Nerd Font Medium 10"
 
 # Set touchpad by grabbing the event
 for pad in $(riverctl list-inputs | grep -i touchpad )
