@@ -1,21 +1,25 @@
 font:
   normal:
-    family: monospace
-    style: Regular
+    family: "JetBrainsMono Nerd Font"
+    style: Medium
 
+  # Bold font face
   bold:
-    family: monospace
+    family: "JetBrainsMono Nerd Font"
     style: Bold
 
+  # Italic font face
   italic:
-    family: monospace
+    family: "JetBrainsMono Nerd Font"
     style: Italic
 
+  # Bold italic font face
   bold_italic:
-    family: monospace
+    family: "JetBrainsMono Nerd Font"
     style: Bold Italic
 
-  size: 9
+  # Point size
+  size: 10
 
 # Catppuccin!
 colors:
