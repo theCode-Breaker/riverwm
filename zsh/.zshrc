@@ -16,7 +16,7 @@ export MANPAGER="sh -c 'col -bx | bat -l man -p'"
 
 HISTSIZE=50000
 SAVEHIST=50000
-HISTFILE=~/.config/zsh/zsh_history
+HISTFILE=~/.zsh_history
 HIST_STAMPS="dd/mm/yyyy"
 compinit
 _comp_options+=(globdots) # lets you tab complete hidden files by default
