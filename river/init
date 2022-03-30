@@ -160,9 +160,9 @@ do
     riverctl map $mode None XF86Eject spawn 'eject -T'
 
     # Control pulse audio volume
-    riverctl map $mode None XF86AudioRaiseVolume  spawn 'bash ~/.config/system_scripts/volume up'
-    riverctl map $mode None XF86AudioLowerVolume  spawn 'bash ~/.config/system_scripts/volume down'
-    riverctl map $mode None XF86AudioMute spawn 'bash ~/.config/system_scripts/volume mute'
+    riverctl map $mode None XF86AudioRaiseVolume  spawn 'pactl set-sink-volume @DEFAULT_SINK@ +5%'
+    riverctl map $mode None XF86AudioLowerVolume  spawn 'pactl set-sink-volume @DEFAULT_SINK@ -5%'
+    riverctl map $mode None XF86AudioMute spawn 'pactl set-sink-mute @DEFAULT_SINK@ toggle'
 
     # Control MPRIS aware media players
     riverctl map $mode None XF86AudioMedia spawn 'bash ~/.config/system_scripts/volume pause'
