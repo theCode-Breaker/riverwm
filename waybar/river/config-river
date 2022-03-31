@@ -8,7 +8,7 @@
 		"tooltip": false,
 		"scroll-step": 5,
 		"format": "{icon} {volume}%",
-		"format-muted": " {volume}%",
+		"format-muted": "{icon} {volume}%",
 		"on-click":"pactl set-sink-mute @DEFAULT_SINK@ toggle",
 		"format-icons": {
 			"default": ["", "", ""]
@@ -85,10 +85,10 @@
         "exec": "checkupdates | wc -l",
         "exec-if": "[[ $(checkupdates | wc -l) != 0 ]]",
         "interval": 15,
-        "on-click": "alacritty -e yay -Syu && notify-send 'The system has been updated' "
+        "on-click": "alacritty -e paru -Syu && notify-send 'The system has been updated' "
     },
     "custom/wallpaper":{
-        "format":"",
+        "format":" ",
         "on-click": "bash ~/.config/system_scripts/pkill_bc"
     }
 }
