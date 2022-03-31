@@ -27,8 +27,8 @@
 		"tooltip": false,
 		"format": " {}%",
 		"interval":1,
-        "on-scroll-up": "$HOME/.config/system_scripts/brightness up",
-		"on-scroll-down": "$HOME/.config/system_scripts/brightness down"
+        "on-scroll-up": "light -A 5",
+		"on-scroll-down": "light -U 5"
 	},
     "battery": {
         "states": {
