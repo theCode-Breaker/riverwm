@@ -1,18 +1,14 @@
-#!/bin/bash
+#!/usr/bin/env bash
 
-entries=" Lock\n Logout\n Suspend\n Reboot\n Shutdown"
-
-selected=$(echo -e $entries|rofi --width 250 --height 220 -dmenu --cache-file /dev/null | awk '{print tolower($2)}')
-
-case $selected in
-  lock)
-    bash ~/.config/system_scripts/wayland_session_lock;;
-  logout)
-    loginctl terminate-user $USER;;
-  suspend)
-    exec systemctl suspend;;
-  reboot)
-    exec reboot;;
-  shutdown)
-    exec poweroff;;
-esac
+choice=$(printf "Lock\nLogout\nSuspend\nReboot\nShutdown" | rofi -dmenu)
+if [[ $choice == "Lock" ]];then
+    bash ~/.config/system_scripts/wayland_session_lock
+elif [[ $choice == "Logout" ]];then
+    pkill -KILL -u "$USER"
+elif [[ $choice == "Suspend" ]];then
+    systemctl suspend
+elif [[ $choice == "Reboot" ]];then
+    reboot
+elif [[ $choice == "Reboot" ]];then
+    poweroff
+fi
