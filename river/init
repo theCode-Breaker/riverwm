@@ -25,10 +25,10 @@ riverctl map normal $mod R spawn $HOME/.config/river/init
 riverctl map normal $mod D spawn "rofi -show drun"
 
 # pcmanfm-qt
-riverctl map normal $mod+Shift d spawn "pcmanfm"
+riverctl map normal $mod+Shift d spawn "thunar"
 
 # firefox
-riverctl map normal $mod+Shift B spawn "brave"
+riverctl map normal $mod+Shift B spawn "vivaldi-stable"
 
 # manual syslock
 riverctl map normal $mod+Shift x  spawn "bash ~/.config/system_scripts/wayland_session_lock"
@@ -165,14 +165,14 @@ do
     riverctl map $mode None XF86AudioMute spawn 'pactl set-sink-mute @DEFAULT_SINK@ toggle'
 
     # Control MPRIS aware media players
-    riverctl map $mode None XF86AudioMedia spawn 'bash ~/.config/system_scripts/volume pause'
-    riverctl map $mode None XF86AudioPlay  spawn 'bash ~/.config/system_scripts/volume pause'
-    riverctl map $mode None XF86AudioPrev  spawn 'bash ~/.config/system_scripts/volume prev'
-    riverctl map $mode None XF86AudioNext  spawn 'bash ~/.config/system_scripts/volume next'
+    riverctl map $mode None XF86AudioMedia spawn 'playerctl play-pause'
+    riverctl map $mode None XF86AudioPlay  spawn 'playerctl play-pause'
+    riverctl map $mode None XF86AudioPrev  spawn 'playerctl previous'
+    riverctl map $mode None XF86AudioNext  spawn 'playerctl next'
 
     # Control screen backlight brighness
-    riverctl map $mode None XF86MonBrightnessUp   spawn 'bash ~/.config/system_scripts/brightness up'
-    riverctl map $mode None XF86MonBrightnessDown spawn 'bash ~/.config/system_scripts/brightness down'
+    riverctl map $mode None XF86MonBrightnessUp   spawn 'light -A 5'
+    riverctl map $mode None XF86MonBrightnessDown spawn 'light -U 5'
 done
 
 # Set background and border color
