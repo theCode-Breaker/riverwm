@@ -25,7 +25,7 @@ riverctl map normal $mod R spawn $HOME/.config/river/init
 riverctl map normal $mod D spawn "rofi -show drun"
 
 # pcmanfm-qt
-riverctl map normal $mod+Shift d spawn "thunar"
+riverctl map normal $mod+Shift f spawn "thunar"
 
 # firefox
 riverctl map normal $mod+Shift B spawn "vivaldi-stable"
