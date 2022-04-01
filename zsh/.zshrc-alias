@@ -120,9 +120,6 @@ alias infox='sudo pacman -Sii '
 ##Refresh Keys
 alias rkeys='sudo pacman-key --refresh-keys'
 
-#StayRolling
-alias dist-upgrade='update && upgrade'
-
 #shutdown or reboot
 alias sr="sudo reboot"
 alias ssn="sudo shutdown now"
