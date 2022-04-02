@@ -60,8 +60,6 @@ window#waybar.hidden {
 	text-shadow: inherit;
 	color: #FAE3B0;
     border-color: #E8A2AF;
-    border-top: 2px solid #E8A2AF;
-    border-bottom: 2px solid #E8A2AF;
     color: #E8A2AF;
 }
 
