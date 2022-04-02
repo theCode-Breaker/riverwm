@@ -16,7 +16,7 @@
 	},
 
     "river/tags": {
-		"num-tags": 5
+		"num-tags": 6
     },
 	"network": {
 		"tooltip": false,
@@ -60,6 +60,7 @@
         "max-length": 10
     },
     "custom/media": {
+        "interval": 30,
         "format": "{icon} {}",
         "return-type": "json",
         "max-length": 20,
