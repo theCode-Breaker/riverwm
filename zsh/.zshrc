@@ -66,7 +66,6 @@ for m in visual viopp; do
 	bindkey -M $m $c select-bracketed
   done
 done
-
 # Use vim keys in tab complete menu:
 bindkey -M menuselect 'h' vi-backward-char
 bindkey -M menuselect 'k' vi-up-line-or-history
@@ -76,9 +75,8 @@ bindkey -v '^?' backward-delete-char
 bindkey '^R' history-incremental-search-backward
 bindkey '^E' edit-command-line
 bindkey -v
-
 source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 source /usr/share/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
 [[ -f $PWD/.zshrc-alias ]] && . $PWD/.zshrc-alias
 precmd(){print""}
-clear && fm6000
+clear && fm6000 -r -n -c random
